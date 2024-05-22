@@ -1,0 +1,15 @@
+<div>
+    <h2>Create Entity</h2>
+    <form (ngSubmit)="createEntity()">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" [(ngModel)]="entity.name" name="name" required>
+      </div>
+      <div>
+        <label for="description">Description</label>
+        <input type="text" id="description" [(ngModel)]="entity.description" name="description" required>
+      </div>
+      <button type="submit">Create</button>
+    </form>
+  </div>
+  
